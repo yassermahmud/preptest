@@ -2,13 +2,12 @@
 var megalomaniac = {  mastermind: "Joker", henchwoman: "Harley" };
 
 megalomaniac.mastermind
-???
+"Joker"
 
 megalomaniac.henchwoman
-???
-
+"Harley"
 megalomaniac.henchWoman
-???
+undefined
 
 
 var megalomaniac = {
@@ -35,7 +34,7 @@ var megalomaniac = {
 };
 
 currentYear
-???
+2017
 
 megalomaniac.calculateAge()
-???
+47
