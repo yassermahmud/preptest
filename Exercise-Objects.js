@@ -2,12 +2,15 @@
 var megalomaniac = {  mastermind: "Joker", henchwoman: "Harley" };
 
 megalomaniac.mastermind
-???
+???"Joker"
 
 megalomaniac.henchwoman
+"Harley"
 ???
 
 megalomaniac.henchWoman
+
+Uncaught error not an object value
 ???
 
 
@@ -22,6 +25,7 @@ var megalomaniac = {
 var battleCry = megalomaniac.battleCry(4);
 battleCry
 ???
+"They are Pinky and the Brain Brain Brain Brain"
 
 var currentDate = new Date();
 var currentYear = (currentDate.getFullYear());
@@ -35,7 +39,10 @@ var megalomaniac = {
 };
 
 currentYear
+2017
 ???
 
 megalomaniac.calculateAge()
-???
+??? 47
+
+Completed the Objects
