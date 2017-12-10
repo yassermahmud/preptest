@@ -2,28 +2,28 @@
 function add(a, b) {
   return a + b;
 }
-
+(1,2)
 add(1, 2) 
-???
+3
 
 
 var message = "Outer";
 function getMessage() {
   return message;
 }
+"Outer"
 function overrideMessage() {
   var message = "Inner";
   return message;
 }
 
 getMessage()
-???
-
+"inner"
 overrideMessage()
-???
+"Outer"
     
 message
-???
+"Outer"
 
 var variable = "top-level";
 function parentfunction() {
@@ -35,8 +35,7 @@ function parentfunction() {
 }
 
 parentfunction()
-???
-
+"local"
 
 makeMysteryFunction(makerValue) {
   var newFunction = function doMysteriousThing(param) {
@@ -65,7 +64,7 @@ function returnSecondArg(firstArg, secondArg) {
 }
 
 returnSecondArg("only give first arg")
-???
+
 
 
 function returnAllArgs() {
