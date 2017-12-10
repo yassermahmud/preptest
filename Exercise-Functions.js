@@ -4,7 +4,7 @@ function add(a, b) {
 }
 
 add(1, 2) 
-???
+3
 
 
 var message = "Outer";
@@ -17,13 +17,13 @@ function overrideMessage() {
 }
 
 getMessage()
-???
+Outer
 
 overrideMessage()
-???
+Inner
     
 message
-???
+Outer
 
 var variable = "top-level";
 function parentfunction() {
@@ -35,7 +35,7 @@ function parentfunction() {
 }
 
 parentfunction()
-???
+local
 
 
 makeMysteryFunction(makerValue) {
@@ -49,15 +49,15 @@ var mysteryFunction3 = makeMysteryFunction(3);
 var mysteryFunction5 = makeMysteryFunction(5);
 
 mysteryFunction3(10) + mysteryFunction5(5)
-???
 
+//I think toutput is an error otherwise i am wrong
 
 function returnFirstArg(firstArg) {
   return firstArg;
 }
 
 returnFirstArg("first", "second", "third")
-???
+["first", "second", "third"]
 
 
 function returnSecondArg(firstArg, secondArg) {
@@ -65,7 +65,7 @@ function returnSecondArg(firstArg, secondArg) {
 }
 
 returnSecondArg("only give first arg")
-???
+undefined
 
 
 function returnAllArgs() {
@@ -77,7 +77,7 @@ function returnAllArgs() {
 }
 
 returnAllArgs("first", "second", "third")
-???
+first,second,third
 
 
 var appendRules = function(name) {
@@ -90,8 +90,8 @@ var appendDoubleRules = function(name) {
 
 var praiseSinger = { givePraise: appendRules };
 praiseSinger.givePraise("John")
-???
+John rules
 
 praiseSinger.givePraise = appendDoubleRules;
 praiseSinger.givePraise("Mary")
-???
+Mary totally rules
