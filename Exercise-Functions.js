@@ -4,7 +4,7 @@ function add(a, b) {
 }
 
 add(1, 2) 
-???
+3
 
 
 var message = "Outer";
@@ -17,13 +17,13 @@ function overrideMessage() {
 }
 
 getMessage()
-???
+"Outer"
 
 overrideMessage()
-???
+"Inner"
     
 message
-???
+"Outer"
 
 var variable = "top-level";
 function parentfunction() {
@@ -35,13 +35,16 @@ function parentfunction() {
 }
 
 parentfunction()
-???
+"local"
 
 
 makeMysteryFunction(makerValue) {
+	
+	
   var newFunction = function doMysteriousThing(param) {
     return makerValue + param;
   };
+	
   return newFunction;
 };
 
@@ -49,7 +52,7 @@ var mysteryFunction3 = makeMysteryFunction(3);
 var mysteryFunction5 = makeMysteryFunction(5);
 
 mysteryFunction3(10) + mysteryFunction5(5)
-???
+23
 
 
 function returnFirstArg(firstArg) {
@@ -57,7 +60,7 @@ function returnFirstArg(firstArg) {
 }
 
 returnFirstArg("first", "second", "third")
-???
+"first"
 
 
 function returnSecondArg(firstArg, secondArg) {
@@ -65,7 +68,7 @@ function returnSecondArg(firstArg, secondArg) {
 }
 
 returnSecondArg("only give first arg")
-???
+undefined
 
 
 function returnAllArgs() {
@@ -77,7 +80,7 @@ function returnAllArgs() {
 }
 
 returnAllArgs("first", "second", "third")
-???
+"first,second,third"
 
 
 var appendRules = function(name) {
@@ -90,8 +93,8 @@ var appendDoubleRules = function(name) {
 
 var praiseSinger = { givePraise: appendRules };
 praiseSinger.givePraise("John")
-???
+"John rules"
 
 praiseSinger.givePraise = appendDoubleRules;
 praiseSinger.givePraise("Mary")
-???
+"Marry totally rules"
